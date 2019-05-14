@@ -12,7 +12,7 @@ cd "$PROJECT_DIR"
 set +e
 openssl aes-256-cbc \
     -d \
-    -in ./.circleci/gpg.private.enc -k "${ENCRYPTION_PASSPHRASE}" | gpg --import -
+    -in ./.circleci/gpg.private.enc -k "${ENCRYPTION_PASSPHRASE}" | gpg --allow-secret-key-import --import -
 set -e
 
 git crypt unlock
