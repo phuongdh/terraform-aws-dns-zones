@@ -4,6 +4,8 @@
 set -e
 set -o pipefail
 
+sudo -s 
+
 GIT_CRYPT_VERSION="0.5.0"
 
 apt-get update
