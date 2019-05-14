@@ -4,7 +4,7 @@
 set -e
 set -o pipefail
 
-sudo -s 
+sudo -i
 
 GIT_CRYPT_VERSION="0.5.0"
 
