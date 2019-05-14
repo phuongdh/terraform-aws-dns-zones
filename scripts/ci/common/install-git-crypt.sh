@@ -10,6 +10,7 @@ apt-get update
 apt-get install -y --no-install-recommends git ssh libssl1.0-dev
 
 # Workaround for Debian 9 https://rvm.io/rvm/security#ipv6-issues
+mkdir ~/.gnupg
 echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf
 
 for key in \
