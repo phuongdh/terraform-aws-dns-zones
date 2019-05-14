@@ -6,8 +6,8 @@ set -o pipefail
 
 GIT_CRYPT_VERSION="0.5.0"
 
-sudo apt-get update
-sudo apt-get install -y --no-install-recommends git ssh
+apt-get update
+apt-get install -y --no-install-recommends git ssh
 
 for key in \
   EF5D84C1838F2EB6D8968C0410378EFC2080080C \
